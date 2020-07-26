@@ -1,0 +1,145 @@
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Need Move to file */
+
+body * {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #262626;
+  font-family: "RobotoRegular";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body a:hover, body a:focus, body a:visited {
+  color: #262626;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+body .site-header header .region-navigation ul li a.sf-depth-1, body .site-header header .region-navigation ul li span.sf-depth-1 {
+  font-family: "RobotoBold";
+  font-weight: bold;
+}
+
+body .site-header header {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  width: -webkit-fill-available;
+  max-width: 100%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  position: relative;
+}
+
+body .site-header header .l-branding {
+  max-width: 160px;
+}
+
+body .site-header header .l-branding .site-logo {
+  display: block;
+}
+
+body img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu {
+  border: none;
+  list-style: none;
+  text-align: left;
+}
+
+.sf-menu.menu, .sf-menu.menu ul, .sf-menu.menu li {
+  margin: 0;
+}
+
+@media (min-width: 946px) {
+  body .site-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.4);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.4);
+  }
+
+  body .site-header {
+    background-color: #fff;
+  }
+
+  body .site-header .region-navigation ul#superfish-1 {
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: relative;
+    padding-top: .5em;
+    font-size: 16px;
+  }
+
+  body .site-header .region-navigation ul#superfish-1>li {
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .mobile-only {
+      display: none;
+  }
+
+  body .site-header header .region-navigation ul#superfish-1 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  body .site-header header {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  body .site-header header {
+    width: 85%;
+  }
+  body .site-header header .region-navigation {
+    width: 85%;
+  }
+  body .site-header header .region-navigation ul#superfish-1 {
+    justify-content: flex-end;
+    font-size: 16px;
+  }
+
+  body .site-header header .region-navigation ul#superfish-1 li {
+    margin-right: 1em;
+  }
+}
